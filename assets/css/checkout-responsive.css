@@ -1,0 +1,101 @@
+/* Responsive */
+
+
+@media screen and (max-width:1200px) {
+
+
+
+}
+
+
+@media screen and (max-width:992px) {
+    
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .yglblk-field-row {
+        grid-template-columns: 1fr;
+    }
+    .yglblk-form-heading {
+        margin: 25px 0 10px 0;
+        font-size: 30px;
+    }
+    .yglblk-checkout-form-wrapepr {
+        padding: 40px;
+    }
+    .yglblk-checkout-container {
+        margin: 70px auto 70px;
+    }
+
+    .yglblk-next-btn, .yglblk-prev-btn {
+        font-size: 16px;
+        padding: 16px 34px 16px 45px;
+    }
+    .yglblk-header-step p {
+        font-size: 12px;
+    }
+    .yglblk-header-step:after, .yglblk-header-step:before {
+        right: 0px;
+    }
+
+    .vertical-padding-medium {
+        padding: 40px 0 80px;
+    }
+
+    p {
+        line-height: 1.3em;
+    }
+    .yglblk-single-file-upload .file-label.label-big {
+        height: 90px;
+        background-size: 70% 100%;
+    }
+
+    .small-switcher-wrapper {
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .switcher-option-wrapper,.small-switcher-wrapper .font-bold {
+        flex-basis:100%
+    }
+
+
+  }
+
+@media screen and (max-width: 600px) {
+    .payment-options,.yglblk-field-row {
+        grid-template-columns: 1fr;
+    }
+  .yglblk-checkout-form-wrapepr {
+    padding: 40px 20px;
+}
+.vertical-padding-medium {
+    padding: 40px 0 30px;
+}
+
+.switcher-option label.switch {
+    padding: 12px 25px;
+    font-size: 13px;
+}
+.label-big-3col {
+    grid-template-columns:1fr;
+    grid-gap:10px;
+}
+.yglblk-single-file-upload .file-label.label-big {
+    max-width: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    height: 100px;
+}
+.label-big-3col .yglblk-single-file-upload {
+    margin-top:10px;
+}
+
+
+
+}

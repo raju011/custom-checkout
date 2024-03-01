@@ -1,0 +1,604 @@
+/* Font Css */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* End Font Css */
+
+@font-face {
+    font-family: 'Fb Matador';
+    src: url('assets/fonts/fbmetador/FbMatador-Bold.woff') format('woff2'),
+        url('assets/fonts/fbmetador/FbMatador-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.hidden {
+    display:none!important;
+}
+.no-border {
+    border:none!important;
+}
+.d-grid {
+    display:grid;
+}
+.d-flex {
+    display:flex;
+}
+input:focus,select:focus,textarea:focus {
+    outline:none;
+}
+.disable-block {
+    display:none;
+}
+p.font-bold {
+    font-weight:500;
+    color:#404040;
+    font-size:17px;
+}
+.text-center {
+    text-align:center;
+}
+.mb-30 {
+    margin-bottom:30px!important;
+}
+.mb-20 {
+    margin-bottom:20px!important;
+}
+.mt-30 {
+    margin-top:30px!important;
+}
+.mt-20 {
+    margin-top:20px!important;
+}
+.mr-0 {
+    margin:0!important
+}
+p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #37383F;
+    margin-bottom:5px;
+    line-height:1.7;
+}
+/* Checkout Form Css */
+
+.yglblk-checkout {
+
+font-family:"Rubik", sans-serif;
+padding:0 20px;
+
+}
+
+.yglblk-checkout-container {
+    max-width:750px;
+    margin:100px auto 125px;
+}
+
+.yglblk-checkout-form-wrapepr {
+
+    background:#fff;
+    padding: 40px 75px;
+    background: #fff;
+    box-shadow: 5px 10px 30px 0 #00000015;
+    border-radius: 30px;
+
+}
+.yglblk-checkbox-wrapper input[type="checkbox"] {
+    width:22px;
+    height:22px;
+}
+
+.yglblk-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin:15px 0;
+}
+.yglblk-checkbox-wrapper label {
+    font-size: 17px;
+    font-weight: 500;
+    color: #37383F;
+    width: 100%;
+}
+
+
+/* Form steps */
+
+
+.yglblk-form-step-two,.yglblk-form-step-three,.yglblk-form-step-one.disable {
+    display:none;
+}
+
+.yglblk-form-step-two.enable,.yglblk-form-step-three.enable {
+    display:block;
+}
+
+.step-marker {
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:#D5D7DD;
+}
+
+.yglblk-header-step {
+    flex-direction: column;
+    position:relative;
+}
+
+.yglblk-header-step:after,.yglblk-header-step:before {
+    position: absolute;
+    content: '';
+    width: 76%;
+    height: 1px;
+    border-top: 2px dashed #D5D7DD!important;
+    top: 8px;
+    right: 26px;
+}
+.yglblk-header-step:before {
+    border-top: 2px dashed #132242!important;
+    width:0;
+    z-index:2;
+    transition:.3s;
+}
+.yglblk-header-step.active:before {
+    border-top: 2px dashed #132242!important;
+    width: 76%;
+}
+.yglblk-header-step p {
+    margin-top:7px;
+}
+
+.yglblk-header-step.active .step-marker {
+    background:#132242!important;
+}
+label .hint {
+    display: block;
+    margin: 0 0 3px 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #37383F;
+}
+.chk-field-pri  {
+
+    padding: 12px 20px!important;
+    background: #F3F5F7!important;
+    border: solid 1px #D5D7DD!important;
+    font-size: 19px!important;
+    font-family: 'rubik'!important;
+    font-weight: 300!important;
+    color: #111!important;
+    box-shadow: unset !important;
+    width: 100%;
+}
+
+.yglblk-form-header-step {
+    grid-template-columns:repeat(4,1fr);
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D5D7DD;
+}
+.yglblk-field-row {
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+    align-items: end;
+    margin-bottom:15px;
+}
+.yglblk-single-field-wrapper {
+    display:flex;
+    flex-direction:column;
+}
+.yglblk-single-field-wrapper label {
+    margin: 0 0 7px 0;
+    font-size: 17px;
+    font-weight: 500;
+    color: #37383F;
+}
+.yglblk-form-heading {
+    margin: 35px 0 10px 0;
+    text-align: center;
+    font-family: 'Fb Matador';
+    font-size: 50px;
+    color: #0E0F24;
+    line-height: 1;
+}
+.yglblk-form-subtitle {
+    margin-bottom:30px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+.yglblk-prev-btn i {
+    margin:0 10px;
+}
+.yglblk-next-btn,.yglblk-prev-btn {
+    display: inline-block;
+    font-family: 'Fb Matador';
+    font-size: 25px;
+    font-weight: 400;
+    border: 0;
+    padding: 20px 34px 20px 45px;
+    cursor: pointer;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+    color: #FFFFFF;
+    background: #132242;
+    margin-top:10px;
+}
+.yglblk-next-btn:hover,.yglblk-prev-btn:hover {
+    transform: scale(0.96);
+}
+.yglblk-prev-btn {
+    background: #FFFFFF;
+    color: #132242;
+}
+.yglblk-step-button-wrapper {
+    text-align:center;
+}
+
+.vertical-padding-medium {
+
+    padding:40px 0 125px
+    
+}
+
+
+/* Step Three */
+
+.file-upload-details {
+    position: relative;
+}
+
+.file-remove-btn {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #DD224F;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.file-type-hint {
+    color: #DD224F;
+}
+.file-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+img.image-preview {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+p.file-size {
+    font-size: 14px;
+    font-weight: 400;
+}
+.yglblk-file-upload-wrapper {
+    margin-top:45px;
+    border-bottom:1px solid #D5D7DD;
+    padding-bottom:30px;
+}
+
+.yglblk-single-file-upload input[type="file"] {
+    display:none;
+}
+
+.yglblk-single-file-upload .file-label  {
+    padding: 0;
+    display: block;
+    max-width: 250px;
+    width: 100%;
+    height: 50px;
+    font-size: 0;
+    border: solid 1px #D7DFE4;
+    border-radius: 5px;
+    background-color: #fff;
+    background-image: url(assets/images/upload-img.svg) !important;
+    background-size: 175px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    transition: all 0.25s ease-in-out;
+}
+.yglblk-single-file-upload .file-label.label-big {
+    background-image: url(assets/images/Upload-File02.svg) !important;
+    width: 100%;
+    height: 140px;
+    border-radius: 5px;
+    margin-bottom:5px;
+}
+.file-label.label-big .image-preview {
+    width: 100%;
+    height: 140px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.yglblk-single-file-upload {
+    margin-top:30px;
+}
+
+.yglblk-concent-group {
+    border-bottom:1px solid #D5D7DD;
+}
+.checkout-form-h3 {
+    font-family: "Fb Matador";
+    font-size: 27px;
+    color: #0E0F24;
+    line-height: 1.2;
+}
+.yglblk-quantity-info {
+    margin-top:25px;
+}
+.quantity-single-row {
+    justify-content:space-between;
+    padding:7px 0;
+    border-bottom:1px solid #D5D7DD;
+}
+.quantity-single-row p {
+    font-size:12px;
+}
+.payment-options {
+
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-top:20px;
+
+}
+.single-payment-option label img {
+    height: 15px;
+    width: auto;
+    margin-right: 15px;
+}
+.bit-payment-option label img {
+
+    height:25px;
+
+} 
+.single-payment-option label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px !important;
+    height: 60px;
+    width: 100%;
+    border: solid 1px #ddd;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top:5px;
+}
+.payment-option-wrapper {
+    padding:20px 0;
+    border-bottom:1px solid #D5D7DD;
+    margin-bottom:20px;
+}
+
+.single-payment-option input:checked +label {
+    border: solid 2px #132242;
+}
+
+.loader-img {
+    width:30px;
+}
+
+
+/* Annual Report */
+
+.switcher-option input[type="radio"] {
+    display:none;
+}
+.year-selection {
+    margin-bottom:20px;
+} 
+.switcher-option {
+    display: inline-block !important;
+    margin: 10px 0 0 0;
+    background: #F3F5F7;
+    border: solid 1px #D5D7DD;
+    border-radius: 150px;
+}
+.switcher-option label.switch {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 19px 40px;
+    border-radius: 150px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.switcher-option input[type="radio"]:checked + label.switch-no {
+    background: #132242;
+    color: #fff !important;
+}
+.switcher-option input[type="radio"]:checked + label.switch-yes {
+    background: #DD224F;
+    color: #fff !important;
+}
+.switcher-option-wrapper {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #D5D7DD;
+}
+
+
+.interest-us h4 {
+    margin: 0 0 5px 0 !important;
+    font-size: 25px !important;
+    text-align: right !important;
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-family: "Fb Matador";
+    font-size: 50px;
+    color: #0E0F24;
+    line-height: 1;
+}
+
+.interest-us {
+    margin:20px 0;
+    padding: 25px !important;
+    border: dashed 2px #abb7c3;
+    text-align: right !important;
+}
+
+
+
+/* Open Business Incometax */
+
+
+.yglblk-checkbox-wrapper.obi-step-two {
+    border-bottom: solid 1px #D5D7DD;
+    border-top: solid 1px #D5D7DD;
+    margin-top:30px;
+    padding:20px 0;
+}
+
+.ylgblk-file-switcher.obi-step-two {
+    margin-top: 20px;
+}
+
+.ylgblk-file-switcher.border-bottom {
+
+    border-bottom:1px solid #D5D7DD;
+
+}
+
+p.accordion-title.accordion-toggle-btn {
+    font-weight: 500;
+    cursor:pointer;
+}
+
+p.accordion-title.accordion-toggle-btn i {
+    margin-left: 8px;
+}
+.yglblk-checkout-accordion.obi-step-two {
+    margin: 20px 0;
+}
+
+.label-big-3col {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin-top: 0;
+}
+.yglblk-checkbox-wrapper.obi-step-three {
+    border-bottom: solid 1px #D5D7DD;
+    margin-top:30px;
+    padding:20px 0;
+}
+.dted-step-two-fields {
+    margin-bottom:75px;
+}
+.ocic-working-hours {
+    border-bottom: solid 1px #D5D7DD;
+    margin-top:25px;
+    padding-bottom:15px;
+}
+
+.cpst-step-two-fields .yglblk-field-row {
+    border-bottom: solid 1px #D5D7DD;
+}
+.checkout-form-h4 {
+    padding: 15px 0 0 0;
+    margin-bottom:-5px;
+    font-size: 25px;
+    font-family: "Fb Matador";
+    color: #132242;
+}
+.switcher-option-wrapper.small-size .switcher-option label.switch {
+    padding: 7px 20px;
+}
+.small-switcher-wrapper {
+    align-items: center;
+    gap:80px;
+}
+.switcher-option-wrapper.small-size {
+    padding-bottom: 0px;
+    text-align: left;
+}
+.switcher-option-wrapper {
+    flex-basis:30%
+}
+.small-switcher-wrapper .font-bold {
+    flex-basis:70%;
+}
+.cpst-step-two-fields .ylgblk-file-switcher {
+padding-bottom:20px;
+}
+
+
+/* Service Area */
+body {
+    background:#F5F8FB;
+}
+.service-area {
+    min-height:100vh;
+    padding:125px 0;
+}
+.service-container {
+    max-width:1280px;
+    padding:0 20px;
+    margin:auto;
+}
+.section-heading {
+    max-width:750px;
+    margin:auto;
+}
+.section-heading h2 {
+    color: #0E0F24;
+    font-family: "Fb Matador";
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom:20px;
+}
+.section-heading h4{
+    color: #0E0F24;
+    font-family: "Fb Matador";
+    font-size: 30px;
+    font-weight: 700;
+}
+.service-items-wrapper {
+    margin-top:85px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap:20px;
+}
+
+.service-items {
+    background:#fff;
+    padding:24px;
+    border-radius:5px;
+    box-shadow:0px 0px 15px 5px rgba(0,0,0,.02);
+    cursor:pointer;
+    transition:.3s;
+}
+.service-items:hover {
+    transform:scale(0.98);
+}
+.service-content h4 {
+    color: #0E0F24;
+    font-family: "Rubik";
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-bottom:10px;
+}
+
+.service-content p {
+    text-align: right;
+    color: #0E0F24;
+    font-family: "Rubik";
+    font-size: 17px;
+    font-weight: 400;
+}
